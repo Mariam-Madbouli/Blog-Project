@@ -7,6 +7,39 @@
   pointer-events: none;
 }
 
+.blog-card {
+    max-height: 100vh;
+    margin: 15% 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 20rem;
+    overflow: hidden;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    
+}
+
+.blog-card:hover {
+    transform: translateY(-0.5rem) scale(1.0125);
+    box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+img{
+  max-width: 350px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
